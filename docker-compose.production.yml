@@ -17,7 +17,7 @@ services:
     volumes:
       - static_volume:/backend_static
   frontend:
-    image: vvvolokitin/taski_frontend  # Качаем с Docker Hub
+    image: vvvolokitin/taski_frontend  
     env_file: .env
     command: cp -r /app/build/. /frontend_static/
     volumes:
